@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ganti dengan nama Anda -->
+    <title>Portofolio - Adam Maulana</title>
+    <link rel="icon" href="jack.png" type="image/jpeg" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons for social media links -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Menggunakan font Inter dari Google Fonts */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style tambahan untuk efek visual */
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #14b8a6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- ===== Header / Navigation ===== -->
+    <header class="bg-slate-50/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-slate-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Ganti dengan inisial atau nama Anda -->
+            <a href="#hero" class="flex items-center text-xl font-bold text-slate-900 space-x-2">
+                <span>Adam</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-slate-600 hover:text-blue-500 transition-colors">Tentang Saya</a>
+                <a href="#projects" class="text-slate-600 hover:text-blue-500 transition-colors">Project</a>
+                <a href="#contact" class="text-slate-600 hover:text-blue-500 transition-colors">Kontak</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all shadow">
+                Hubungi Saya
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+
+        <!-- ===== Hero Section ===== -->
+        <section id="hero" class="py-20 md:py-32 flex flex-col-reverse md:flex-row items-center justify-center text-center md:text-left">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
+                    <!-- Ganti dengan nama lengkap Anda -->
+                    Adam Maulana
+                </h1>
+                <!-- Ganti dengan peran atau aspirasi karir Anda -->
+                <p class="text-xl md:text-2xl mt-2 font-medium gradient-text">
+                    Aspiring Software Engineer
+                </p>
+                <!-- Ganti dengan deskripsi singkat Anda (2-3 kalimat) -->
+                <p class="mt-4 max-w-lg mx-auto md:mx-0 text-slate-600">
+                    Saya seorang mahasiswa Rekayasa Perangkat Lunak yang bersemangat membangun solusi digital yang intuitif dan berdampak. Saat ini saya mencari kesempatan magang untuk menerapkan keterampilan saya dalam lingkungan kerja yang dinamis.
+                </p>
+                <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                    <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-all shadow-lg font-semibold">
+                        Lihat Project Saya
+                    </a>
+                    <!-- Ganti dengan link CV Anda yang bisa diunduh -->
+                    <a href="https://drive.google.com/file/d/1bH28iq0J10kt7eDQAiOylWS5btKIyZfy/view" download class="bg-slate-200 text-slate-800 px-6 py-3 rounded-lg hover:bg-slate-300 transition-all font-semibold">
+                        Unduh CV
+                    </a>
+                </div>
+                <div class="mt-8 flex justify-center md:justify-start space-x-6">
+                    <!-- Ganti dengan URL profil LinkedIn Anda -->
+                    <a href="https://linkedin.com/in/adam-maulana-93835820a/" target="_blank" class="text-slate-500 hover:text-blue-500">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <!-- Ganti dengan URL profil GitHub Anda -->
+                    <a href="https://github.com/AdamJoestar" target="_blank" class="text-slate-500 hover:text-blue-500">
+                        <i data-feather="github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/3 mb-10 md:mb-0">
+                <!-- Ganti 'src' dengan link foto profesional Anda. Ukuran ideal 400x400 px -->
+                <img src="IMG_4763.JPG" alt="Foto Profil Budi Santoso" class="rounded-full shadow-2xl mx-auto">
+            </div>
+        </section>
+
+        <!-- ===== About Section ===== -->
+        <section id="about" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-2">Tentang Saya</h2>
+            <p class="text-center text-slate-500 mb-12">Perjalanan, keterampilan, dan semangat saya.</p>
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Siapa Saya?</h3>
+                    <!-- Ganti dengan cerita tentang diri Anda, minat, dan mengapa Anda memilih bidang ini -->
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Perjalanan saya di dunia teknologi dimulai dari rasa penasaran tentang bagaimana aplikasi di ponsel saya bisa bekerja. Keingintahuan inilah yang menuntun saya ke jurusan Rekayasa Perangkat Lunak, di mana saya menemukan passion sejati saya: memecahkan masalah nyata melalui perangkat lunak.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Di luar akademis, saya aktif di himpunan mahasiswa sebagai bendahara. Peran ini mengajarkan saya tentang kepemimpinan, kerja tim, dan manajemen proyek dari awal hingga akhir. Saya percaya, kombinasi antara keterampilan teknis dan soft skills ini akan menjadikan saya aset berharga bagi tim Anda.
+                    </p>
+                </div>
+                <div class="md:w-1/3 w-full">
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Keterampilan</h3>
+                    <div class="space-y-4">
+                        <!-- Ganti dengan keterampilan Anda. Tambah atau kurangi sesuai kebutuhan -->
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold text-slate-800">Bahasa Pemrograman</h4>
+                            <p class="text-slate-600 text-sm">JavaScript , PHP , Dart , Kotlin , Python, HTML , CSS, SQL</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold text-slate-800">Framework & Tools</h4>
+                            <p class="text-slate-600 text-sm">React.js, Node.js , Tailwind CSS, Git, Figma , Flutter , Laravel </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold text-slate-800">Soft Skills</h4>
+                            <p class="text-slate-600 text-sm">Problem Solving, Komunikasi, Kerja Tim, Manajemen Waktu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Projects Section ===== -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-2">Project</h2>
+            <p class="text-center text-slate-500 mb-12">Beberapa Project yang pernah saya selesaikan.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- === Contoh Proyek 1 === -->
+                <!-- Ganti semua detail di bawah ini dengan proyek Anda -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Ganti src dengan screenshot proyek Anda. Ukuran ideal 600x400 -->
+                    <img src="Yurshopdes.png" alt="Gambar Proyek 1" class="w-full h-48 object-top object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-slate-900">Aplikasi Mobile Yurshop</h3>
+                        <p class="text-slate-600 mb-4 text-sm">Sebuah aplikasi mobile e-commerce untuk penjualan sayuran dan buah buahan organik</p>
+                        <div class="mb-4">
+                            <!-- Ganti dengan teknologi yang Anda gunakan -->
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Kotlin</span>
+                            <span class="inline-block bg-slate-100 text-slate-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Firebase</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <!-- Ganti href dengan link demo dan repo proyek Anda -->
+                            <a href="https://www.figma.com/proto/nW88yghebRE2Jp03JLSObL/OrganikShop?node-id=144-2&t=s2RBHU8o8KAPD37Y-1" class="text-blue-500 font-semibold hover:underline">Live Demo</a>
+                            <a href="https://github.com/AdamJoestar/yurshop" class="text-slate-500 font-semibold hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Contoh Proyek 2 === -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="sale.png" alt="Gambar Proyek 2" class="w-full h-48 object-top object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-slate-900">World Time App</h3>
+                        <p class="text-slate-600 mb-4 text-sm">Sebuah aplikasi mobile untuk menampilkan waktu di seluruh dunia </p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Dart</span>
+                            <span class="inline-block bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Flutter</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/AdamJoestar/world_time" class="text-slate-500 font-semibold hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Contoh Proyek 3 === -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="blog.png" alt="Gambar Proyek 3" class="w-full h-48 object-top object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-slate-900">Website Blog</h3>
+                        <p class="text-slate-600 mb-4 text-sm">Sebuah website blog yang dapat menampilkan banyak post</p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">PHP</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Laravel</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Tailwind</span>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">MySql</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/AdamJoestar/lastdance" class="text-slate-500 font-semibold hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact" class="py-20 text-center">
+             <h2 class="text-3xl font-bold text-slate-900 mb-2">Mari Terhubung</h2>
+             <p class="text-slate-500 mb-8 max-w-2xl mx-auto">
+                 Saya selalu terbuka untuk diskusi, kolaborasi, atau sekadar menyapa. Jangan ragu untuk menghubungi saya!
+             </p>
+             <!-- Ganti dengan alamat email Anda -->
+             <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=adamschoolauto@gmail.com" class="inline-block bg-teal-500 text-white text-lg font-semibold px-8 py-4 rounded-lg hover:bg-teal-600 transition-all shadow-lg">
+                 Kirim Email
+             </a>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-slate-100 border-t border-slate-200">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-500">
+            <!-- Ganti dengan nama dan tahun Anda -->
+            <p>&copy; 2025 Adam Maulana. Dibuat dengan semangat dan secangkir kopi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Inisialisasi Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
